@@ -17,8 +17,8 @@
         <h1>Order Summary</h1>
         <?php
             // --- Configuration: Change these values to test all business rules! ---
-            $size = 'L'; // Options: 'S', 'M', 'L', 'XL'
-            $color = 'Pink'; // Any string, but test with 'Sunset Orange' or 'Ocean Blue'
+            $size = 'S'; // Options: 'S', 'M', 'L', 'XL'
+            $color = 'Ocean Blue'; // Any string, but test with 'Sunset Orange' or 'Ocean Blue'
             $isCustomized = false; // Options: true, false
             $customerFirstName = 'Athina'; // <-- IMPORTANT: REPLACE WITH YOUR ACTUAL FIRST NAME
 
