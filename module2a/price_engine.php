@@ -35,7 +35,7 @@
                  //sunset orange
                  if($color == 'Sunset Orange'){
                     $finalPrice = $finalPrice + 2.00;
-                    $details .= "<li>Color (L) Upcharge: <span>+$2.00</span></li>";
+                    $details .= "<li>Color Upcharge: <span>+$2.00</span></li>";
                     //shirt could be sunset orange with custom text
                     if($isCustomized == true){
                       $finalPrice = $finalPrice + 5.00;
@@ -46,7 +46,7 @@
                  //ocean blue
                  if($color == 'Ocean Blue'){
                     $finalPrice = $finalPrice + 2.00;
-                    $details .= "<li>Color (L) Upcharge: <span>+$2.00</span></li>";
+                    $details .= "<li>Color Upcharge: <span>+$2.00</span></li>";
                     //shirt could be ocean blue with custom text
                     if($isCustomized == true){
                       $finalPrice = $finalPrice + 5.00;
@@ -75,10 +75,12 @@
              //size XL
              if($size == 'XL'){
                   $finalPrice = $finalPrice + 2.50;
-                  $details .= "<li>Size (L) Upcharge: <span>+$2.50</span></li>";
+                  $details .= "<li>Size (XL) Upcharge: <span>+$2.50</span></li>";
                   
                    //sunset orange
                  if($color == 'Sunset Orange'){
+                     $finalPrice = $finalPrice + 2.00;
+                     $details .= "<li>Color Upcharge: <span>+$2.00</span></li>";
                      $finalPrice = $finalPrice + 5.00;
                      $details .= "<li>Customization (XL) Upcharge: <span>+$5.00</span></li>";
                      $finalPrice = $finalPrice + 3.00;
@@ -93,7 +95,7 @@
                  //ocean blue
                  if($color == 'Ocean Blue'){
                     $finalPrice = $finalPrice + 2.00;
-                    $details .= "<li>Color (L) Upcharge: <span>+$2.00</span></li>";
+                    $details .= "<li>Color Upcharge: <span>+$2.00</span></li>";
                     //shirt could be ocean blue with custom text
                     if($isCustomized == true){
                       $finalPrice = $finalPrice + 5.00;
