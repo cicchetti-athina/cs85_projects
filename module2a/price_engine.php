@@ -38,9 +38,14 @@
                     $details .= "<li>Color Upcharge: <span>+$2.00</span></li>";
                     //shirt could be sunset orange with custom text
                     if($isCustomized == true){
-                      $finalPrice = $finalPrice + 5.00;
-                      $details .= "<li>Customization (L) Upcharge: <span>+$5.00</span></li>";
-                      }
+                        $finalPrice = $finalPrice + 5.00;
+                        $details .= "<li>Customization (L) Upcharge: <span>+$5.00</span></li>";
+                        //long name discount
+                        if (strlen($customerFirstName) > 6) {
+                           $finalPrice = $finalPrice - 1.00;
+                           $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
+                          }
+                        }
                  }
                  
                  //ocean blue
@@ -60,15 +65,21 @@
                  }
                  
                  //shirt customization other colors
+                 if($color != 'Ocean Blue'){
+                    if($color != 'Sunset Orange'){
                     if($isCustomized == true){
                       $finalPrice = $finalPrice + 5.00;
                       $details .= "<li>Customization (L) Upcharge: <span>+$5.00</span></li>";
+                      $finalPrice = $finalPrice + 3.00;
+                      $details .= "<li>XL Handling Fee: <span>+$3.00</span></li>";
                       //long name discount
                       if (strlen($customerFirstName) > 6) {
                          $finalPrice = $finalPrice - 1.00;
                          $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
                         }
                       }
+                    }
+                }
                  
              }
              
@@ -88,7 +99,12 @@
                         $details .= "<li>Customization (XL) Upcharge: <span>+$5.00</span></li>";
                         $finalPrice = $finalPrice + 3.00;
                         $details .= "<li>XL Handling Fee: <span>+$3.00</span></li>";
-                      }
+                        //long name discount
+                        if (strlen($customerFirstName) > 6) {
+                           $finalPrice = $finalPrice - 1.00;
+                           $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
+                          }
+                        }
                  }
                  
                  //ocean blue
