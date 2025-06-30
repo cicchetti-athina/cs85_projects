@@ -18,7 +18,7 @@
         <?php
             // --- Configuration: Change these values to test all business rules! ---
             $size = 'S'; // Options: 'S', 'M', 'L', 'XL'
-            $color = 'Ocean Blue'; // Any string, but test with 'Sunset Orange' or 'Ocean Blue'
+            $color = 'pink'; // Any string, but test with 'Sunset Orange' or 'Ocean Blue'
             $isCustomized = false; // Options: true, false
             $customerFirstName = 'Athina'; // <-- IMPORTANT: REPLACE WITH YOUR ACTUAL FIRST NAME
 
