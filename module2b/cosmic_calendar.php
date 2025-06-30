@@ -20,7 +20,7 @@
         <h1>Cosmic Calendar</h1>
         <div class="calendar-grid">
             <?php
-                $myName = "Athina"; 
+                $myName = "Athinaaaaaaaaaaaaaaaaaaaaaaaaaaa"; 
 
                 // getting the API data 
                 $jsonString = file_get_contents('https://timeapi.io/api/time/current/zone?timeZone=America%2FLos_Angeles');
