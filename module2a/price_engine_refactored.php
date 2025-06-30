@@ -143,7 +143,16 @@
                
 
                 
-              
+            /*
+                MY DEBUGGING LOG:
+                The first problem I ran into was figuring out how to get the customized option to trigger only one time if the shirt color was Ocean Blue or Sunset Orange, it would charge twice.
+                So what I did originally was after the options for the color upcharges, I did a nested if loop to check if the colors ARE NOT premium colors, and if they are not to check if they
+                have a customization option. So that fixed the issue with charging premium colors for customization twice. I also at first totally forgot to check for other sizes outside of L and XL
+                so when I tested it at first it seemed fine with the original XL input but when I changed it to S I realized my mistake. So I had to do a similar thing, nested if conditions to check
+                if the sizes are NOT XL and NOT L. That fixed that issue. Once I could use else if and else as well as or and and everything actually seemed a lot less complicated. However, I still 
+                feel like maybe I missed something that could be simplified by else if etc. 
+
+            */
 
             // --- DO NOT EDIT BELOW THIS LINE ---
             echo "<ul>" . $details . "</ul>";
