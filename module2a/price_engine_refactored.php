@@ -19,7 +19,7 @@
             // --- Configuration: Change these values to test all business rules! ---
             $size = 'S'; // Options: 'S', 'M', 'L', 'XL'
             $color = 'Ocean Blue'; // Any string, but test with 'Sunset Orange' or 'Ocean Blue'
-            $isCustomized = false; // Options: true, false
+            $isCustomized = true; // Options: true, false
             $customerFirstName = 'Athinaaaaaa'; // <-- IMPORTANT: REPLACE WITH YOUR ACTUAL FIRST NAME
 
             // --- Part A: Implement the logic below using ONLY simple, nested if-statements ---
@@ -40,7 +40,7 @@
                     if($isCustomized == true){
                         $finalPrice = $finalPrice + 5.00;
                         $details .= "<li>Customization  Upcharge: <span>+$5.00</span></li>";
-                        echo strlen($customerFirstName);
+                        
                         //long name discount
                         if (strlen($customerFirstName) > 6) {
                            $finalPrice = $finalPrice - 1.00;
@@ -57,7 +57,7 @@
                       $details .= "<li>Customization Upcharge: <span>+$5.00</span></li>";
                       
                       //long name discount
-                      echo strlen($customerFirstName);
+                      
                       if (strlen($customerFirstName) > 6) {
                          $finalPrice = $finalPrice - 1.00;
                          $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
@@ -85,7 +85,7 @@
                         $finalPrice = $finalPrice + 3.00;
                         $details .= "<li>XL Handling Fee: <span>+$3.00</span></li>";
                         //long name discount
-                        echo strlen($customerFirstName);
+                        
                         if (strlen($customerFirstName) > 6) {
                            $finalPrice = $finalPrice - 1.00;
                            $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
@@ -101,7 +101,7 @@
                       $finalPrice = $finalPrice + 3.00;
                       $details .= "<li>XL Handling Fee: <span>+$3.00</span></li>";
                       //long name discount
-                      echo strlen($customerFirstName);
+                      
                       if (strlen($customerFirstName) > 6) {
                          $finalPrice = $finalPrice - 1.00;
                          $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
@@ -123,7 +123,7 @@
                        $details .= "<li>Customization Upcharge: <span>+$5.00</span></li>";
                        
                        //long name discount
-                       echo strlen($customerFirstName);
+                       
                        if (strlen($customerFirstName) > 6) {
                           $finalPrice = $finalPrice - 1.00;
                           $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
@@ -138,7 +138,7 @@
                      $details .= "<li>Customization Upcharge: <span>+$5.00</span></li>";
                      
                      //long name discount
-                     echo strlen($customerFirstName);
+                     
                      if (strlen($customerFirstName) > 6) {
                         $finalPrice = $finalPrice - 1.00;
                         $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
