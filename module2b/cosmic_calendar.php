@@ -20,7 +20,7 @@
         <h1>Cosmic Calendar</h1>
         <div class="calendar-grid">
             <?php
-                $myName = "Athina"; 
+                $myName = "Athinaaaaaa"; 
 
                 // getting the API data 
                 $jsonString = file_get_contents('https://timeapi.io/api/time/current/zone?timeZone=America%2FLos_Angeles');
@@ -53,8 +53,13 @@
                     //print
                      echo "<div class='$cssClass'>$i</div>";
                 }
-
-
+            
+                /*
+                    MY DEBUGGING LOG:
+                    I was really confused at first especially about how to extract the data from the API object but the sample code really helped a lot. 
+                    The part that tripped me up after that  was setting the loop to start at my name length, but it was simple to just set $i to nameLength.
+                    I tested a few different names and it was working like it was supposed to.
+                */
             ?>
         </div>
     </div>
