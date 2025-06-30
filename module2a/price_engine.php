@@ -17,9 +17,9 @@
         <h1>Order Summary</h1>
         <?php
             // --- Configuration: Change these values to test all business rules! ---
-            $size = 'S'; // Options: 'S', 'M', 'L', 'XL'
-            $color = 'Sunset Orange'; // Any string, but test with 'Sunset Orange' or 'Ocean Blue'
-            $isCustomized = true; // Options: true, false
+            $size = 'M'; // Options: 'S', 'M', 'L', 'XL'
+            $color = 'Ocean Blue'; // Any string, but test with 'Sunset Orange' or 'Ocean Blue'
+            $isCustomized = false; // Options: true, false
             $customerFirstName = 'Athina'; // <-- IMPORTANT: REPLACE WITH YOUR ACTUAL FIRST NAME
 
             // --- Part A: Implement the logic below using ONLY simple, nested if-statements ---
@@ -40,7 +40,7 @@
                     if($isCustomized == true){
                         $finalPrice = $finalPrice + 5.00;
                         $details .= "<li>Customization  Upcharge: <span>+$5.00</span></li>";
-                        
+
                         //long name discount
                         if (strlen($customerFirstName) > 6) {
                            $finalPrice = $finalPrice - 1.00;
