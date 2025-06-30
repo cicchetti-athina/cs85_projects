@@ -81,14 +81,13 @@
                  if($color == 'Sunset Orange'){
                      $finalPrice = $finalPrice + 2.00;
                      $details .= "<li>Color Upcharge: <span>+$2.00</span></li>";
-                     $finalPrice = $finalPrice + 5.00;
-                     $details .= "<li>Customization (XL) Upcharge: <span>+$5.00</span></li>";
-                     $finalPrice = $finalPrice + 3.00;
-                     $details .= "<li>XL Handling Fee: <span>+$3.00</span></li>";
+                     
                     //shirt could be sunset orange with custom text
                     if($isCustomized == true){
-                      $finalPrice = $finalPrice + 8.00; //add 8.00 for XL 
-                      $details .= "<li>Customization (XL) Upcharge: <span>+$8.00</span></li>";
+                        $finalPrice = $finalPrice + 5.00;
+                        $details .= "<li>Customization (XL) Upcharge: <span>+$5.00</span></li>";
+                        $finalPrice = $finalPrice + 3.00;
+                        $details .= "<li>XL Handling Fee: <span>+$3.00</span></li>";
                       }
                  }
                  
@@ -111,6 +110,8 @@
                  }
                  
                  //shirt customization other colors
+                 if($color != 'Ocean Blue'){
+                    if($color != 'Sunset Orange'){
                     if($isCustomized == true){
                       $finalPrice = $finalPrice + 5.00;
                       $details .= "<li>Customization (XL) Upcharge: <span>+$5.00</span></li>";
@@ -122,6 +123,8 @@
                          $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
                         }
                       }
+                    }
+                }
               }
 
             // --- DO NOT EDIT BELOW THIS LINE ---
