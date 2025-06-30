@@ -40,7 +40,7 @@
                     if($isCustomized == true){
                         $finalPrice = $finalPrice + 5.00;
                         $details .= "<li>Customization  Upcharge: <span>+$5.00</span></li>";
-
+                        echo strlen($customerFirstName);
                         //long name discount
                         if (strlen($customerFirstName) > 6) {
                            $finalPrice = $finalPrice - 1.00;
@@ -57,6 +57,7 @@
                       $details .= "<li>Customization Upcharge: <span>+$5.00</span></li>";
                       
                       //long name discount
+                      echo strlen($customerFirstName);
                       if (strlen($customerFirstName) > 6) {
                          $finalPrice = $finalPrice - 1.00;
                          $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
@@ -84,6 +85,7 @@
                         $finalPrice = $finalPrice + 3.00;
                         $details .= "<li>XL Handling Fee: <span>+$3.00</span></li>";
                         //long name discount
+                        echo strlen($customerFirstName);
                         if (strlen($customerFirstName) > 6) {
                            $finalPrice = $finalPrice - 1.00;
                            $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
@@ -99,6 +101,7 @@
                       $finalPrice = $finalPrice + 3.00;
                       $details .= "<li>XL Handling Fee: <span>+$3.00</span></li>";
                       //long name discount
+                      echo strlen($customerFirstName);
                       if (strlen($customerFirstName) > 6) {
                          $finalPrice = $finalPrice - 1.00;
                          $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
@@ -120,6 +123,7 @@
                        $details .= "<li>Customization Upcharge: <span>+$5.00</span></li>";
                        
                        //long name discount
+                       echo strlen($customerFirstName);
                        if (strlen($customerFirstName) > 6) {
                           $finalPrice = $finalPrice - 1.00;
                           $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
@@ -134,6 +138,7 @@
                      $details .= "<li>Customization Upcharge: <span>+$5.00</span></li>";
                      
                      //long name discount
+                     echo strlen($customerFirstName);
                      if (strlen($customerFirstName) > 6) {
                         $finalPrice = $finalPrice - 1.00;
                         $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
